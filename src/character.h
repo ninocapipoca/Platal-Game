@@ -61,8 +61,6 @@ class Protagonist : public Character {
     // to overwrite it anyway
     Position viewport_center_;
     Stats stats_;
-    std::vector<std::string> animFiles_; // vector of animation strips
-    std::vector<std::string> animIds_; // vector of IDs of animation strips
     AnimatedTexture animationArray_[animFiles_.size()]; // array has to be same length as nr of files
 };
 
