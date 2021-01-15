@@ -61,7 +61,7 @@ class Protagonist : public Character {
     // to overwrite it anyway
     Position viewport_center_;
     Stats stats_;
-    AnimatedTexture animationArray_[animFiles_.size()]; // array has to be same length as nr of files
+    std::vector<AnimatedTexture> animationArray_; // array has to be same length as nr of files
 };
 
 class NPC : public Character {
